@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class charandstring {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String n = sc.nextLine();
+//        char vib = n.charAt(2);
+//        System.out.println(vib);
+//        System.out.println(n.length());
+//        for(int i = 0 ; i<n.length(); i++) {
+//            char vibh = n.charAt(i);
+//            System.out.println(vibh);
+//        }
+//        System.out.println(n.substring(0,2));
+//        System.out.println(n.substring(1));
+//        for(int i = 0 ; i <n.length(); i++) {
+//            for(int j = i + 1; j<=n.length(); j++) {
+//                System.out.println(n.substring(i,j));
+//            }
+//        }
+        String s1 = "hello";
+        String s2 = "world";
+        String s3 = s1 + " " + s2;
+//         s1 += "0";
+//         s1 += "10";
+//         s1 += "vuib";
+
+        System.out.println(s1 + "heloo" + 10); //helloheloo10
+        String s = "ss int  nitg vhib,inb";
+        String [] part = s.split(" ");
+        for(int i =0; i< part.length; i++) {
+            System.out.println(part[i]);
+        }
+    }
+
+}
