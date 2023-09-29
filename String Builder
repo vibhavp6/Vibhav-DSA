@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class stringbuilder {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        StringBuilder sbb = new StringBuilder(s);
+        System.out.println(sbb); //hello (if hello is input )
+        sbb.setCharAt(0,'d');
+        System.out.println(sbb); //dello
+        sbb.insert(0, 'y');
+        System.out.println(sbb); //ydello
+        sbb.deleteCharAt(0); // dello
+        System.out.println(sbb);
+        sbb.append('g');
+        System.out.println(sbb);//dellog
+        System.out.println(sbb.length());//6
+    }
+}
