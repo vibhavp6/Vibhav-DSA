@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class differnceofch {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String scc = sc.nextLine();
+        System.out.println(chiff(scc));
+    }
+
+    static String chiff(String scc) {
+        StringBuilder sb = new StringBuilder(scc);
+        sb.append(scc.charAt(0));
+        for (int i = 1; i<sb.length(); i++) {
+            char curr = scc.charAt(i);
+            char prev = scc.charAt(i-1);
+            int gap = curr - prev;
+            sb.append(gap);
+            sb.append(curr);
+        }
+        return sb.toString();
+    }
+}
